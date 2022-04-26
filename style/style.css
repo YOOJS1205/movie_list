@@ -112,6 +112,7 @@ button {
 }
 
 .movie-list .movie-info strong {
+  margin-left: 5px;
   color: #000000;
 }
 
