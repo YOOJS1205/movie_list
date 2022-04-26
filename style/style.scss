@@ -1,0 +1,122 @@
+$gray: #F2F2F2;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+}
+
+.ir {
+
+}
+
+.container {
+    background-color: $gray;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 91px 0 135px;
+    .title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding: 41px 216px 37px;
+        margin: 0 205px;
+        border-bottom: 2px solid #BDBDBD;
+    }
+}
+
+
+.menu_list {
+    padding: 28px 0;
+    .menu {
+        font-size: 1.6rem;
+        color: #828282;
+        display: inline-block;
+        padding: 0 30px;
+        .menu-btn {
+            background-color: $gray;
+            &:focus {
+                font-weight: 900;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.movie-list {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 28px 31px 29px;
+    padding: 26px 27px 30px;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    display: grid;
+    gap: 23px 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .movie {
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 19px 20px 0;
+        img {
+            width: 100%;
+        }
+    }
+    .movie-title {
+        font-size: 1.6rem;
+        font-weight: 900;
+        padding-top: 11px;
+        text-align: left;
+    }
+    .movie-info {
+        display: grid;
+        gap: 5px;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        color: #828282;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 12px 0 18px;
+        strong {
+            color: #000000;
+        }
+        .movie-genre {
+            text-align: left;
+        }
+        .movie-score {
+            text-align: right;
+            .star {
+                height: 14px;
+                width: 14px;
+                line-height: 1.9rem;
+                display: inline-block;
+                vertical-align: -2px;
+            }
+        }
+        .movie-open,
+        .movie-actor {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: left;
+        }
+    }
+}
+
+footer {
+    background-color: $gray;
+    padding: 53px 0 38px;
+    margin: 0 365px;
+}
