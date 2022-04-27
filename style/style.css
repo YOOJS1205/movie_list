@@ -142,7 +142,56 @@ button {
 
 footer {
   background-color: #F2F2F2;
-  padding: 53px 0 38px;
-  margin: 0 365px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 53px 365px 38px;
+}
+
+footer .social {
+  border-bottom: 1px solid #c4c4c4;
+  overflow: hidden;
+}
+
+footer .social .footer-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  padding-bottom: 42px;
+  float: left;
+}
+
+footer .social .social-media {
+  float: right;
+}
+
+footer .social .social-media a + a {
+  margin-left: 23px;
+}
+
+footer .company-info {
+  padding: 36px 0 38px;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  color: #4f4f4f;
+}
+
+footer .company-info li {
+  display: inline-block;
+}
+
+footer .company-info li strong {
+  color: #000000;
+}
+
+footer .company-info li + li::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #4f4f4f;
+  margin-right: 6px;
+  margin-left: 2px;
+  vertical-align: -2px;
 }
 /*# sourceMappingURL=style.css.map */
