@@ -17,6 +17,7 @@ body {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -77,6 +78,7 @@ button {
 }
 
 .movie-list .movie {
+  overflow: hidden;
   border: 1px solid #BDBDBD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -90,14 +92,14 @@ button {
   width: 100%;
 }
 
-.movie-list .movie-title {
+.movie-list .movie .movie-title {
   font-size: 1.6rem;
   font-weight: 900;
   padding-top: 11px;
   text-align: left;
 }
 
-.movie-list .movie-info {
+.movie-list .movie .movie-info {
   display: -ms-grid;
   display: grid;
   gap: 5px;
@@ -111,20 +113,20 @@ button {
   padding: 12px 0 18px;
 }
 
-.movie-list .movie-info strong {
+.movie-list .movie .movie-info strong {
   margin-left: 5px;
   color: #000000;
 }
 
-.movie-list .movie-info .movie-genre {
+.movie-list .movie .movie-info .movie-genre {
   text-align: left;
 }
 
-.movie-list .movie-info .movie-score {
+.movie-list .movie .movie-info .movie-score {
   text-align: right;
 }
 
-.movie-list .movie-info .movie-score .star {
+.movie-list .movie .movie-info .movie-score .star {
   height: 14px;
   width: 14px;
   line-height: 1.9rem;
@@ -132,12 +134,43 @@ button {
   vertical-align: -2px;
 }
 
-.movie-list .movie-info .movie-open,
-.movie-list .movie-info .movie-actor {
+.movie-list .movie .movie-info .movie-open,
+.movie-list .movie .movie-info .movie-actor {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
   text-align: left;
+}
+
+.movie-list .movie .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+  color: #000000;
+}
+
+.movie-list .movie .buttons .play {
+  width: 16px;
+  vertical-align: -3px;
+}
+
+.movie-list .movie .buttons button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 50%;
+  background-color: #F2F2F2;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  text-align: center;
+  border-top: 1px solid #BDBDBD;
+  padding: 9px 0 12px;
+}
+
+.movie-list .movie .buttons button + button {
+  border-left: 1px solid #BDBDBD;
 }
 
 footer {
