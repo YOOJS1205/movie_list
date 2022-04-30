@@ -20,6 +20,15 @@ button {
   cursor: pointer;
 }
 
+.ir {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 .container {
   background-color: #F2F2F2;
   width: auto;
@@ -131,7 +140,12 @@ button {
   width: 14px;
   line-height: 1.9rem;
   display: inline-block;
-  vertical-align: -2px;
+  vertical-align: -1px;
+}
+
+.movie-list .movie .movie-info .movie-score strong {
+  vertical-align: 1px;
+  margin-left: 0;
 }
 
 .movie-list .movie .movie-info .movie-open,
