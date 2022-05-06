@@ -97,8 +97,9 @@ button {
   padding: 19px 20px 0;
 }
 
-.movie-list .movie img {
+.movie-list .movie .movie-img {
   width: 100%;
+  height: 250px;
 }
 
 .movie-list .movie .movie-title {
